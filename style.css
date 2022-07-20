@@ -1,0 +1,380 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(191, 202, 202);
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+}
+
+nav img {
+  height: 50px;
+  padding-left: 30px;
+}
+
+nav li {
+  display: inline-block;
+  justify-content: space-evenly;
+  font-size: larger;
+  cursor: pointer;
+  margin-left: 55px;
+  margin-top: 25px;
+}
+
+nav ul {
+  display: inline;
+  position: absolute;
+  width: fit-content;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  margin-left: 70px;
+  transform: translate(-50%, -50%);
+}
+
+nav span {
+  text-decoration: none;
+  color: white;
+}
+
+nav li span::after {
+  content: "";
+  width: 0%;
+  height: 2.5px;
+  display: block;
+}
+
+nav li span:hover::after {
+  background-color: blueviolet;
+  width: 100%;
+  height: 2.5px;
+  transition: 0.4s;
+  margin: auto;
+}
+
+/* ..................................End of Navigation bar ....................................*/
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: navy;
+}
+
+.home .home2 {
+  width: 600px;
+  margin-top: 50px;
+}
+.home .home2 h2 {
+  font-size: xx-large;
+  padding-bottom: 35px;
+}
+.home .home2 h1 {
+  font-size: 300%;
+  padding-bottom: 60px;
+  color: black;
+}
+.home .home2 #tech {
+  color: black;
+  font-size: 150%;
+  color: black;
+}
+.home .home2 a {
+  font-size: 20px;
+  text-decoration: none;
+  background: linear-gradient(120deg, rgb(43, 43, 167), blueviolet);
+  padding: 13px 35px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.home .home3 img {
+  padding-top: 40px;
+  margin-left: 8vw;
+  margin-top: 70px;
+  padding: 15px;
+  width: 500px;
+  border-radius: 2px;
+}
+
+/* ..................................End of Home Page ....................................*/
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about img {
+  width: 450px;
+  margin-left: 0px;
+  background: none;
+  margin-top: 10vh;
+  margin-right: 8vw;
+}
+.about #intro {
+  width: 600px;
+  margin-top: 5vh;
+}
+.about h1 {
+  margin-bottom: 10px;
+  color: navy;
+}
+.about p {
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 1px;
+  color: black;
+  margin-top: 5vh;
+}
+
+/* ..................................End of About Page ....................................*/
+
+.work {
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.work section {
+  border-left: 1.5px solid grey;
+  height: 95vh;
+}
+.work div {
+  width: 600px;
+  height: 65vh;
+  margin: auto;
+  padding-top: 100px;
+}
+.work div h2 {
+  color: navy;
+  font-size: 22px;
+}
+.work div h1 {
+  word-spacing: 5px;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
+.work div li {
+  font-size: 20px;
+  color: black;
+  margin-top: 5vh;
+}
+.work div img {
+  width: 500px;
+  background: none;
+  background-color: aqua;
+}
+
+/* ..................................End of Experience Page ....................................*/
+
+#tab {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(61, 60, 60);
+  color: white;
+  transform: translate(-50%, -50%);
+  border: solid 2px;
+}
+
+#tab thead {
+  background-color: rgb(151, 89, 209);
+}
+#tab th {
+  color: black;
+  font-size: x-large;
+}
+
+#tab th,
+td {
+  border: solid 2px black;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+/* ..................................End of Education Page ....................................*/
+
+.skill {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill .tech,
+.soft {
+  margin-top: 80px;
+  width: 46vw;
+  margin-left: 100px;
+}
+.skill .soft {
+  margin-top: 50px;
+}
+.skill .tech div li {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  line-height: 70px;
+  color: black;
+}
+.skill .soft li {
+  font-size: larger;
+  line-height: 75px;
+  color: black;
+}
+.skill div img {
+  width: 50px;
+  margin-right: 10px;
+}
+.skill h1 {
+  margin-bottom: 20px;
+}
+.skill section {
+  border-left: 1.5px solid grey;
+  height: 65vh;
+}
+/* ..................................End of Skill Page ....................................*/
+
+.project {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.project ul h1 {
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: navy;
+}
+.project ul p {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: black;
+}
+.project img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 450px;
+}
+.project a {
+  font-size: 20px;
+  text-decoration: none;
+  background: linear-gradient(120deg, rgb(43, 43, 167), blueviolet);
+  padding: 13px 30px;
+  color: white;
+  font-size: 20px;
+  margin-left: 150px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+/* ..................................End of Project Page ....................................*/
+
+.award li {
+  font-size: 30px;
+  color: black;
+}
+.award {
+  width: 1200px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* ..................................End of Award Page ....................................*/
+
+.interest {
+  display: flex;
+  width: 1000px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.interest #int {
+  color: black;
+  width: 2200px;
+  margin-right: 60px;
+}
+.interest li {
+  font-size: 29px;
+  line-height: 70px;
+}
+.interest #design {
+  display: inline;
+  margin-top: 100px;
+}
+.interest img {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+/* ..................................End of Interest Page ....................................*/
+
+.contact {
+  display: flex;
+  width: 1100px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact div {
+  margin-top: 25px;
+  width: 500px;
+  margin-right: 50px;
+}
+.contact #top {
+  margin-top: 30px;
+}
+.contact #bottom {
+  margin-top: 60px;
+}
+.contact h1 {
+  margin-left: 40px;
+}
+.contact ul li {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  list-style: none;
+}
+.contact ul img {
+  width: 30px;
+  margin-right: 10px;
+}
+.contact img {
+  width: 580px;
+}
